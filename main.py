@@ -28,7 +28,7 @@ def post_form(slcTaxa_request, date, date1):
         # Extraindo o cabeçalho e o corpo da tabela
         header = [th.text.strip() for th in soup.find_all("th", {"class": "text-center"})]
         if len(header) > 2:
-            header.pop(1)  # Ajuste no cabeçalho, se necessário
+            header.pop(1)  # Ajuste do cabeçalho para tirar o th referente a taxa escolhida
 
         body = [td.text.strip() for td in soup.find_all("td")]
 
