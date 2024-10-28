@@ -1,7 +1,7 @@
 # Projeto: API de Taxas Referenciais
 
 ## Descrição
-Este projeto cria uma API em Python usando Flask e BeautifulSoup que consulta dados de taxas referenciais de do site da B3. O usuário pode fazer uma requisição GET especificando uma data e a taxa desejada, e o sistema retornará um JSON com as informações extraídas do site.
+Este projeto cria uma API em Python usando Flask e BeautifulSoup que consulta dados de taxas referenciais do site da B3. O usuário pode fazer uma requisição GET especificando uma data e a taxa desejada, e o sistema retornará um JSON com as informações extraídas do site.
 Para capturar corretamente esses dados, é necessário preencher um formulário nesta página e enviar as informações por meio de uma requisição POST.
 
 ## Pré-requisitos
@@ -41,7 +41,7 @@ Para capturar corretamente esses dados, é necessário preencher um formulário 
 
 5. Execute o servidor:
    ```bash
-   python <nome_do_arquivo>.py
+   python main.py
    ```
    O servidor estará disponível em `http://127.0.0.1:5000`.
 
@@ -70,10 +70,9 @@ Para capturar corretamente esses dados, é necessário preencher um formulário 
 ## Por que utilizar o método POST?
 Para extrair os dados da tabela nesta página, é necessário selecionar uma taxa e uma data específicas em um formulário, que utiliza o método POST (como mostrado na imagem abaixo). Usando o método POST no código, conseguimos simular o envio desse formulário, enviando diretamente os parâmetros necessários e obtendo a resposta exata com os dados filtrados conforme a seleção. Além disso, utilizamos o método GET para obter dados passados na URL que auxiliam na construção dos resultados.
 
-![alt text](image.png)
+![html da página bmfbovespa](image.png)
 
 Para inspecionar o HTML diretamente, você pode acessar a página em `https://www2.bmf.com.br/pages/portal/bmfbovespa/lumis/lum-taxas-referenciais-bmf-enUS.asp`
-
 
 ## Autor
 Aline Fernanda Ponzani
