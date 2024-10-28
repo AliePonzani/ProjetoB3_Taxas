@@ -15,8 +15,8 @@ Para capturar corretamente esses dados, é necessário preencher um formulário 
 
 1. Clone o repositório:
    ```bash
-   git clone <https://github.com/AliePonzani/ProjetoB3_Taxas.git>
-   cd <ProjetoB3_Taxas>
+   git clone https://github.com/AliePonzani/ProjetoB3_Taxas.git
+   cd ProjetoB3_Taxas
    ```
 
 2. Crie um ambiente virtual:
